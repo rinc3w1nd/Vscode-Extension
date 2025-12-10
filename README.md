@@ -22,3 +22,18 @@ Install dependencies and run the lint/build pipeline:
 npm install
 npm test
 ```
+
+## Build
+
+To produce the compiled extension output in `dist/`, run the TypeScript build:
+
+```bash
+npm run compile
+```
+
+To create a VSIX package for installation, install `@vscode/vsce` if you do not have it and then package the extension from the repository root:
+
+```bash
+npm install --global @vscode/vsce
+vsce package
+```
